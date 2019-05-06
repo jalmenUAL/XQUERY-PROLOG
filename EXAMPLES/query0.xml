@@ -1,0 +1,11 @@
+<property> 
+
+
+{
+for $z in doc('ex.xml')/bib/book return { for $u in  doc('ex.xml')/bib/book/author return <p>
+ { $z } </p> 
+} 
+}
+</property>
+ 
+

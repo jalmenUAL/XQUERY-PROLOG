@@ -1,0 +1,3 @@
+<result>
+{ doc('ex.xml')/bib/book/author/first }
+</result>

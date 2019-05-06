@@ -1,0 +1,14 @@
+<result>
+{
+for $Book1 in doc('ex1.xml')/bib/book 
+return
+{
+for $Book2 in doc('ex2.xml')/bib/book 
+where $Book1/title/text=$Book2/title/text
+return 
+<mybook> 
+{ $Book1/review } { $Book2/review } 
+</mybook>
+}
+}
+</result>

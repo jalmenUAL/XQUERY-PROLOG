@@ -1,0 +1,26 @@
+<bib>
+   <book year="1994">
+      <title>TCP/IP Illustrated</title>
+      <author>
+         <last>Stevens</last>
+         <first>W.</first>
+      </author>
+      <review> Great TCP  Book! </review>
+   </book>
+   <book year="2000">
+      <title>Data on the Web</title>
+      <author>
+         <last>Abiteboul</last>
+         <first>Serge</first>
+      </author>
+      <author>
+         <last>Buneman</last>
+         <first>Peter</first>
+      </author>
+      <author>
+         <last>Suciu</last>
+      <first>Dan</first>
+      </author>
+      <review> For  XML Beginners </review>
+   </book>
+</bib>

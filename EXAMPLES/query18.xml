@@ -1,0 +1,20 @@
+<books>
+{
+for $X  in   doc('ex.xml')/bib/book  
+return 
+{
+let $Y := $X 
+return
+{
+let $Z := $Y/title 
+return
+{
+let $U := $Y/@year
+where $Y/@year=2000
+return
+<mytitle> { $Z } { $U } { $Y/editor } </mytitle>
+}
+}
+}
+} 
+</books>

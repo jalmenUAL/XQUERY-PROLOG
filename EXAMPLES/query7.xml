@@ -1,0 +1,5 @@
+<books>
+{
+for    $X  in    doc('ex.xml')/bib/book/author  return { let $Y := $X return <name> { $X } { $X } </name> }
+}
+</books>

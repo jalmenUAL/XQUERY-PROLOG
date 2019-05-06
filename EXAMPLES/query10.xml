@@ -1,0 +1,3 @@
+<books>
+{
+for   $X  in    doc('ex.xml')/bib/book/author return { for $Y in doc('ex-two.xml')/bib/book return { $X } } } </books>

@@ -1,0 +1,5 @@
+<books>
+{
+for    $X  in    doc('ex.xml')/bib/book where $X/price/text>100  return <more100> { $X/title } </more100>
+}  
+</books>

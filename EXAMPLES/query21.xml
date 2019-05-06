@@ -1,0 +1,12 @@
+<list>
+{
+for $X  in   doc('ex.xml')/bib/book  
+return
+{
+let $Y := $X/@year
+where $Y=1994
+return
+<item> The book { $X/title }  </item> 
+}
+}
+</list>

@@ -1,0 +1,13 @@
+<books>
+{
+for    $X  in    doc('ex.xml')/bib/book where $X/price/text'<'100  return 
+{
+for $Y in $X where $X/price/text'>'60 return <between60-100> { $X/title } </between60-100>
+}
+}  
+</books>
+<publishers>
+{
+for $Z in doc('ex.xml')/bib/book/publisher return { $Z }
+}
+</publishers>

@@ -1,0 +1,25 @@
+<result>
+{
+let $Store1 := doc('ex1.xml')/bib  
+return
+{
+let $Store2 := doc('ex2.xml')/bib 
+return 
+{
+for $Book1 in $Store1/book 
+return
+{
+for $Book2 in $Store2/book 
+return 
+{
+let $Title := $Book1/title 
+return 
+<mybook> 
+{ $Title } { $Book1/review } { $Book2/review } 
+</mybook>
+}
+}
+}
+}
+}
+</result>

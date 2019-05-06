@@ -1,0 +1,6 @@
+<books>
+{
+for    $X  in    doc('ex.xml')/bib/book/author where  
+$X/last/text=Buneman or $X/last/text=Abiteboul  return <name> { $X } { $X } </name> 
+}
+</books>

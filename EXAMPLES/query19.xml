@@ -1,0 +1,7 @@
+<list>
+{
+for $X  in   doc('ex.xml')/bib/book  
+return 
+<item> The book { $X/title/text } was published  in { $X/@year } </item>
+} 
+</list>
